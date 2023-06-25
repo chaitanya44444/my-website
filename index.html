@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMI Calculator</title>
+<style>
+    body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  width: 200px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.yDiv {
+  border: 2px outset red;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: lightblue;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="yDiv">
+  <h1>BMI Calculator</h1>
+  <form action="/calculate" method="post">
+    <input type="number" name="height" placeholder="Height in centim">
+    <input type="number" name="weight" placeholder="Weight in kgram">
+    <input type="submit" value="Calculate">
+  </form>
+  <p id="bmi">Bmi is:{{ bmi }}</p>
+</div>
+</body>
+</html>
